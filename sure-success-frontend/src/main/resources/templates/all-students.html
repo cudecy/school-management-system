@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sure Success - All Students</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <script src="/js/jquery.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootbox.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="parentDiv">
+    <div align="center" class="col-md-12">
+        <h4 class="logo">Sure Success International College</h4>
+    </div>
+    <br/><br/>
+    <div class="container container-white">
+        <h4 style="text-transform: uppercase" align="center"><b>All Students</b></h4>
+        <div class="row">
+            <a href="javascript: handleEditClick();" style="font-size: 16px; text-decoration: none">
+                <i class="fa fa-edit"></i> Edit Profile
+            </a>
+
+            <a href="javascript:performLogoutAction();" style="font-size: 16px; text-decoration: none">
+                <i class="fa fa-lock"></i> Logout
+            </a>
+        </div>
+        <div class="row table-responsive scrollable">
+            <table class="table table-bordered table-hover table-condensed" width="100%">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>Created On</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="stTblBd">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/application.js"></script>
+<script type="text/javascript" src="/js/user-session.js"></script>
+<script type="text/javascript" src="/js/all-students.js"></script>
+</body>
+</html>
